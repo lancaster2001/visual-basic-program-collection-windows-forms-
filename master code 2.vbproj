@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2126B61F-2681-462A-99F2-CAAE28BE243C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>master code 2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>master code 2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>master code 2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\home_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="main forms\DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="main forms\DataSet1.vb">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="main forms\Login_dialog_module.vb" />
+    <Compile Include="main forms\main_form_module.vb" />
+    <Compile Include="main forms\main_menu_dialog_module.vb" />
+    <Compile Include="main forms\menu_dialog.Designer.vb">
+      <DependentUpon>menu_dialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="main forms\menu_dialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main forms\Login_dialog.Designer.vb">
+      <DependentUpon>Login_dialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="main forms\Login_dialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main forms\register_dialog.Designer.vb">
+      <DependentUpon>register_dialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="main forms\register_dialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main forms\register_module.vb" />
+    <Compile Include="main forms\user.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="programs\scrambler\scrambler_form.Designer.vb">
+      <DependentUpon>scrambler_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="programs\scrambler\scrambler_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="programs\scrambler\scrambler_module.vb" />
+    <Compile Include="user_settings.vb" />
+    <Compile Include="programs\blob game\blob_form.Designer.vb">
+      <DependentUpon>blob_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="programs\blob game\blob_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="programs\blob game\blob_obsical_class.vb" />
+    <Compile Include="programs\blob game\blob_Player_class.vb" />
+    <Compile Include="programs\blob game\pelet.vb" />
+    <Compile Include="prototypes\category form.Designer.vb">
+      <DependentUpon>category form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="prototypes\category form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="programs\bubble\Bubble.vb" />
+    <Compile Include="programs\bubble\bubbles.designer.vb">
+      <DependentUpon>bubbles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="programs\bubble\bubbles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="programs\graph\Class1.vb" />
+    <Compile Include="programs\graph\Graph.Designer.vb">
+      <DependentUpon>Graph.vb</DependentUpon>
+    </Compile>
+    <Compile Include="programs\graph\Graph.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="programs\list\list_form.Designer.vb">
+      <DependentUpon>list_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="programs\list\list_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main forms\main_form.Designer.vb">
+      <DependentUpon>main_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="main forms\main_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="programs\OX\OX.Designer.vb">
+      <DependentUpon>OX.vb</DependentUpon>
+    </Compile>
+    <Compile Include="programs\OX\OX.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="programs\OX\OXgame.vb" />
+    <Compile Include="programs\rpg\rpg module.vb" />
+    <Compile Include="programs\rpg\rpg_form.Designer.vb">
+      <DependentUpon>rpg_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="programs\rpg\rpg_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="programs\text document\text doc opener.Designer.vb">
+      <DependentUpon>text doc opener.vb</DependentUpon>
+    </Compile>
+    <Compile Include="programs\text document\text doc opener.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="main forms\register_dialog.resx">
+      <DependentUpon>register_dialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="programs\scrambler\scrambler_form.resx">
+      <DependentUpon>scrambler_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prototypes\category form.resx">
+      <DependentUpon>category form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main forms\menu_dialog.resx">
+      <DependentUpon>menu_dialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main forms\Login_dialog.resx">
+      <DependentUpon>Login_dialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="programs\blob game\blob_form.resx">
+      <DependentUpon>blob_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="programs\bubble\bubbles.resx">
+      <DependentUpon>bubbles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="programs\graph\Graph.resx">
+      <DependentUpon>Graph.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="programs\list\list_form.resx">
+      <DependentUpon>list_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main forms\main_form.resx">
+      <DependentUpon>main_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="programs\OX\OX.resx">
+      <DependentUpon>OX.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="programs\rpg\rpg_form.resx">
+      <DependentUpon>rpg_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="programs\text document\text doc opener.resx">
+      <DependentUpon>text doc opener.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="main forms\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="main forms\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="main forms\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\home_icon.ico" />
+    <Content Include="Resources\home-icon.ico" />
+    <Content Include="Resources\Icon1.ico" />
+    <Content Include="Resources\Icon1v2.ico" />
+    <Content Include="Resources\test text files\thing.txt" />
+    <Content Include="Resources\test text files\thing_encrypted.txt" />
+    <Content Include="Resources\test text files\thing_encrypted_encrypted.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
